@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { ReactNode } from "react";
 
 interface PageHeaderProps {
   label: string;
@@ -12,7 +12,9 @@ const PageHeader = ({ label, title, subtitle }: PageHeaderProps) => (
     <div className="container mx-auto px-6 relative z-10">
       <p className="pink-label mb-4">{label}</p>
       <h1 className="section-heading max-w-3xl">{title}</h1>
-      {subtitle && <p className="text-muted-foreground mt-4 max-w-xl">{subtitle}</p>}
+      {subtitle && (
+        <p className="text-muted-foreground mt-4 max-w-xl">{subtitle}</p>
+      )}
     </div>
   </div>
 );
